@@ -1,0 +1,10 @@
+{
+  "name": "xprep-tutor-web",
+  "description": "",
+  "version": "1.0.0",
+  "homepage": "",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "*"
+  }
+}

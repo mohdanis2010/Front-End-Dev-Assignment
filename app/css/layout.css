@@ -1,0 +1,40 @@
+/* Variables */
+/* Flex Grid CSS */
+.list-row {
+  display: flex;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 8px !important; }
+  .list-row .col {
+    flex-grow: 1;
+    flex-basis: 100%;
+    font-size: 15px;
+    color: #383938; }
+
+.page-wrapper {
+  padding: 0; }
+  .page-wrapper .row-list-lg {
+    display: inline-block;
+    margin-left: -6px;
+    font-size: 20px;
+    color: #424342; }
+
+.sub-list-container {
+  padding: 12px 28px; }
+  .sub-list-container .list-icon {
+    position: relative;
+    top: 4px;
+    width: 19px;
+    height: 19px; }
+  .sub-list-container .item-label {
+    padding: 0 0px 0 7px; }
+  .sub-list-container .list-item-email {
+    margin: 0 0 0 24px;
+    display: inline-block; }
+  .sub-list-container .list-item-phone {
+    display: inline-block;
+    width: 144px;
+    text-align: left; }
+
+.sub-list-container:nth-child(2n) {
+  background-color: #E7E8E7; }

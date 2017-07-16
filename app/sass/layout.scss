@@ -1,0 +1,65 @@
+
+@import "variable";
+
+/* Flex Grid CSS */
+.list-row {
+  display: flex;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding:8px !important;
+  
+  .col {
+    flex-grow: 1;
+    flex-basis: 100%;
+    font-size: 15px;
+    color: #383938;
+    }
+}
+
+.page-wrapper{
+    padding: 0;
+    .row-list-lg{
+    display: inline-block;
+    margin-left: -6px;
+    font-size: 20px;
+    color: #424342;
+    }
+}
+
+.sub-list-container{
+  
+   padding: 12px 28px;
+
+   .list-icon{
+    position: relative;
+    top: 4px;
+    width: 19px;
+    height: 19px;
+   } 
+    .item-label{
+        padding: 0 0px 0 7px;
+    }
+  .list-item-email{
+      margin: 0 0 0 24px;
+      display: inline-block;
+  }
+  .list-item-phone{
+      display: inline-block;
+      width: 144px;
+      text-align: left;
+  }  
+}
+
+@mixin each($num) {
+  &:nth-child(#{$num}n) {
+    @content
+  }
+}
+
+.sub-list-container
+{
+  @include each(2)
+  {
+    background-color: #E7E8E7;
+  }
+}

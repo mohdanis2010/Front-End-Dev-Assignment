@@ -1,0 +1,15 @@
+<article class="page-wrapper">
+  <span class="serach-icon">&nbsp;</span>
+  <input type="text" class="ctrl-search" name="search"  ng-model="searchText" placeholder="SEARCH (Client Name/Policy Number)" autocomplete="off">
+        <div class="sub-list-container" ng-repeat="list in listView | filter:searchText">
+            <div class="row-list-lg">{{list.name}}</div> 
+                <div class="list-row">
+                <div class="col"><img class="list-icon" ng-src="{{list.icon_phone}}" /> 
+                    <div class="list-item-phone">{{list.phone}}</div>
+                    <div class="list-item-email">{{list.email}}</div>
+                </div>
+                <div class="col"><img class="list-icon" ng-src="{{list.icon_policy}}" /><span class="item-label">Policy No.</span> {{list.policy_no}}</div>
+                </div>
+        </div>
+</article>
+    
