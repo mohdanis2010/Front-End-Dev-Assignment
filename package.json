@@ -31,7 +31,7 @@
     "node-font-awesome": "^1.0.2",
     "run-sequence": "^1.2.1"
   },
-  "author": "Mohit Virli",
+  "author": "Mohd Anis",
   "license": "MIT",
   "devDependencies": {
     "gulp-sass": "^3.1.0"
